@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* --------------------------------- */
+/*----------------- top navigation bar----------- */
+.navbar {
+    height: 10vh;
+    width: 100vw;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 2;
+    background-image: linear-gradient(to right, rgb(255, 145, 0), red, #33374d,#211d4b,#20195c);
+    color: #f1f1f1;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 1vw;
+    margin-right: 20px;
+    font-family:'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+}
+.navbar ul li:hover{
+    background-color: rgba(218, 7, 77, 0.5) ;
+    color: #f1f1f1;
+}
+
+/*-----------second naviation bar---------------*/
+.nav {
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    background-color: #33374d;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 10px 15px rgba(163, 163, 163, 0.603);
+    /* background-image:linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); */
+    /* background-image:linear-gradient(to right,orange,red,rgb(117, 2, 89),purple); */
+    /* background-image:linear-gradient(to right, #B3CFDA,#C1E7B8,#EBE5BB,#F6BFC7,#EEA7CC,#C396CB); */
+}
+
+/* -----drop box for mobile starts----- */
+.drop {
+    display: none;
+    height: 6vh;
+    width: 4vw;
+    text-align: center;
+}
+
+.nav .drop li { 
+    padding-top: 1.5vh;
+    margin-left:15px ;
+    padding-bottom: 1vh;
+    list-style-type: none;
+    font-size: 3vw;
+    height: 4vh;
+    float:left;
+    font-family: 'Source Sans Pro', roboto, sans-serif;
+}
+.dropbtn {
+    background-color: #33374d;
+    color: white;
+    font-size: auto;
+    border: none;
+    cursor: pointer;
+}
+
+.dropcontent {
+    position: relative;
+    top: 35%;
+    display: none;
+    background-color: #fff;
+    color: #33374d;
+    z-index: 3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dropcontent a {
+    padding: 5px;
+    display: block;
+    width: 17.5vw; /*THIS VALUE WORKS FOR SHADOW*/
+    height: 20px;
+    /* border-bottom: 1px dotted rgb(61, 60, 60); Doesnt look good */
+}
+.dropcontent a:hover{
+    background-color: #ddd;
+}
+.dropbtn:hover .dropcontent {
+    display: block;
+    background-color: #f1f1f1;
+}
+
+/* -----drop box for mobile ends------ */
+
+.nav ul {
+    text-align: center;
+}
+
+.nav ul li {
+    font-family: 'Source Sans Pro', roboto, sans-serif;
+    text-align: center;
+    /* margin: 2vw; */
+    display: inline-block;
+    height: 6vh;
+    width: auto;
+    padding: 0px 2.5vw 0px 2.5vw;
+    font-size: 2vw;
+    color: #f1f1f1;
+    letter-spacing: 1px;
+}
+
+.nav ul {
+    height: 6vh;
+}
+
+/* ----TRY,".active", to highlight current page thats active----*/
+.nav ul li:hover {
+    color: #f1f1f1;
+    background-color: #1e1f27e5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1 {
+    font-family: roboto, sans-serif;
+    margin: 7px;
+}
+h2{
+    font-family: roboto, sans-serif;
+    margin: 7px;
+}
+a{
+    text-decoration: none;
+    color: #33374d;
+}
+hr {
+    border: 2px solid #1e1f27e5;
+    display: block;
+    unicode-bidi: isolate;
+    margin-inline-start: 4px;
+    margin-inline-end: 4px;
+}
+
+p {
+    font-family: roboto, sans-serif;
+    margin: 7px;
+}
+
+.navtab {
+/*-------side navigator-------*/
+    overflow: scroll;
+    position: sticky;
+    top: 17vh;
+    background-color: #d7d2cc;
+    width: 19vw;
+    height: 81.5vh;
+    z-index: 0;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+
+.head {
+    display: block;
+    width: auto;
+    height: 50px;
+    border-bottom: 1px dotted #304352;
+}
+
+.navtab ul li {
+    font-size: large;
+    width: auto;
+    height: 5vh;
+    overflow: hidden;
+    display: block;
+    
+}
+.navtab ul li a{
+    display: block;
+    width: auto;
+    height: 5vh;
+    color: #304352;
+    top: 20vh;
+    padding: 1vh;
+    padding-left: 2vh;
+}
+ .navtab ul li a:hover{  
+    color: #fff;
+    background-color: #304352;
+    overflow: visible;
+    height: auto;
+}
+
+.navtab ul li:hover {
+    /* background-color: rgba(123, 187, 212, 0.863); */
+    background-color: #304352;
+    color: white;
+    overflow: visible;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+/*---shadow syntax variables: offset-x | offset-y | blur-radius | spread-radius | color---*/
+}
+
+.container {
+    display: flex;
+    background-color: #fff;
+}
+
+.content {
+    margin: 4vw;
+    margin-top: 2vw;
+    background-color: #fff;
+    width: 71vw;
+    height: auto;
+    padding-bottom: 30vh;
+    margin-bottom: 10vh;
+}
+
+.content h1 {
+    background-color: #d7d2cc;
+    padding: 2vh;
+    margin: 4vh;
+    border-bottom: 1px dotted #aaa;
+    font-size: 4vw;
+}
+.content h2 {
+    padding: 2vh;
+    font-size: 3.2vw;
+    margin: 4vh;
+    border-bottom: 1px dotted #aaa;
+}
+.content h3 {
+    padding: 2vh;
+    font-size: 2.5vw;
+    margin: 4vh;
+    margin-left: 8vh;
+    border-bottom: 1px dotted #aaa;
+}
+
+.content p {
+    font-size: 2vw;
+    margin: 4vh;
+    margin-left: 40px;
+}
+
+.ConList li{ 
+    padding: 1vh 2vw 1vh 0;
+    font-size: 1.8vw;
+    margin-left: 9vw;
+    font-family: roboto, sans-serif;
+}
+/* ---Footer,use when bug is fixed--- */
+.foot {
+    bottom: 0;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 10vh;
+    color: white;
+    background-color: black;
+    z-index: 0;
+}
+
+/*---------Media Qeuries for smartphone---------*/
+@media (max-width: 530px) {
+    .navbar{
+        height:6vh;
+    }
+    .nav{
+        display: block;
+    }
+    .nav ul li {
+        display: none;
+
+    }
+    .drop {
+        display: inline-block;
+        justify-self: left;
+    }
+
+    .navtab {
+        display: none;
+    }
+
+    .content {  
+        width: 86vw;
+    }
+    .content h1{
+        background-color: #3a4c5a;
+        padding: 3vh;
+        color: #f1f1f1;
+    }
+    .content p {
+        font-size: 3vw;
+        margin: 2vh 4vh 2vh 4vh;
+    }
+    .content h2 {
+        padding: 1vh 2vh 1vh 1vh;
+        font-size: 3vw;
+        margin: 2vh 4vh 2vh 4vh;
+    }
+    .content h3 {
+        padding: 1vh 2vh 1vh 1vh;
+        font-size: 2.5vw;
+        margin: 2vh 4vh 2vh 5vh;
+    }
+
+    .ConList li {
+        padding: 1vw 15vw 1vw 0;
+        margin-left: 9vh;
+        font-size: 2.5vw;
+    }
+    /* vyoms media queries */
+	/* label + .menu {
+		display:none;
+	}
+	
+	header .mobil-menu {
+		display: block;
+	} */
+}
